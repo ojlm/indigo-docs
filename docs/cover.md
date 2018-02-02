@@ -1,1 +1,1 @@
-# ❤️ Asura
+# [Asura :heart:](#asura)

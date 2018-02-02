@@ -16,11 +16,17 @@
   <script>
     window.$docsify = {
       name: 'Asura',
+      nameLink: {
+        '/zh-cn/': '/zh-cn/',
+        '/': '/'
+      },
       repo: 'https://github.com/asura-pro/coco',
       maxLevel: 3,
       coverpage: true,
       coverpage: 'cover.md',
       auto2top: true,
+      loadSidebar: true,
+      subMaxLevel: 2,
       themeColor: 'lightseagreen',
       search: {
         maxAge: 86400000,

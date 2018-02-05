@@ -7,6 +7,17 @@
 }
 ```
 
+## 断言上下文
+> jsonpath 的上下文, 由每个用例每次请求的响应组成
+
+``` typescript
+{
+  "status" : int // http status code
+  "headers" :  [{key:value}] // http 响应头
+  "entity" : {...} // http 响应体
+}
+```
+
 ## 短语
 
 ### 比较

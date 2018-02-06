@@ -1,5 +1,8 @@
 - [基本术语](concepts.md)
-- [使用简册](handbook.md)
+- 使用简册
+  - [创建用例](create-case.md)
+  - [创建场景](create-senario.md)
+  - [创建任务](create-job.md)
 - 参考
   - [接口](restapi.md)
   - [断言](assert.md)

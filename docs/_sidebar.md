@@ -1,9 +1,12 @@
+- [预备知识](knowledge-reserve.md)
 - [基本术语](concepts.md)
 - 使用简册
   - [创建用例](create-case.md)
+  - [使用代理](create-proxy.md)
   - [创建场景](create-senario.md)
   - [创建任务](create-job.md)
 - 参考
   - [接口](restapi.md)
   - [断言](assert.md)
+  - [代理](proxy.md)
 - [开发指南](guide.md)

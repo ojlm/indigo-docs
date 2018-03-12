@@ -2,13 +2,14 @@
 
 ## 递归定义
 ``` typescript
-{
+class Assert {
   [string]: Assert // 对象的key必须为 jsonpath 或 以下断言短语
 }
 ```
 
 ## 断言上下文
-> jsonpath 的上下文, 由每个用例每次请求的响应组成
+
+> jsonpath 的上下文, 由每个用例每次请求的响应组成. 将对响应的断言转换为对json结构体的断言
 
 ``` typescript
 {

@@ -5,4 +5,4 @@
 ## Overview
 ![](./assets/images/indigo-asura.jpg)
 
-[CONTACT ME](mailto:zhengshaodong@guazi.com)
+[CONTACT ME](mailto:ngxcorpio@guazi.com)

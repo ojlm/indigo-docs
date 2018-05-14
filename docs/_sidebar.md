@@ -8,5 +8,11 @@
 - 参考
   - [接口](restapi.md)
   - [断言](assert.md)
+  - [场景](senario.md)
   - [代理](proxy.md)
+- [接口](api/README.md)
+  - [用例相关](api/api-case.md)
+  - 接口模型
+    - [Case](api/model/Case.md)
+    - [Authorization](api/model/Authorization.md)
 - [开发指南](guide.md)

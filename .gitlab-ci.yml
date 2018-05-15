@@ -1,6 +1,8 @@
 pages:
+  script:
+  - mv docs public
   artifacts:
     paths:
-    - docs
+    - public
   only:
   - master

@@ -1,7 +1,5 @@
 # 用例接口
 
-接口请求必须包含, Cookie `GUAZISSO`, 值为用户登录 SSO 后的 `token`
-
 ## 用例新增接口
 
 - 地址: `/case/index`
@@ -19,7 +17,7 @@
 - 地址: `/case/update`
 - 方法: `POST`
 - ContentType: `application/json`
-- RequestBody Data: 
+- RequestBody: 
 >```scala
 >case class UpdateCase(
 >    id: String, // 用例文档ID
@@ -50,3 +48,11 @@ Map(
     list: Seq[{...Case, _id: String}] // 用例模型 [Case](../api/model/Case.md)中所有字段加上`_id`(用例文档ID)组成的数组
 )
 ```
+
+## 用例测试接口
+
+- 地址: `/case/test`
+- 方法: `POST`
+- ContentType: `application/json`
+- RequestBody: [Case](../api/model/Case.md)
+- ResponseBody Data: [CaseResult](../api/model/CaseResult.md)

@@ -21,7 +21,7 @@
         '/zh-cn/': '/zh-cn/',
         '/': '/'
       },
-      repo: 'https://github.com/asura-pro/coco',
+      // repo: 'https://github.com/asura-pro/coco',
       maxLevel: 3,
       coverpage: true,
       coverpage: 'cover.md',
@@ -47,14 +47,15 @@
       },
       ga: 'UA-113487425-1',
       plugins: [
-        EditOnGithubPlugin.create(
-          'https://github.com/asura-pro/coco/blob/master/docs/'
-        ),
+        // EditOnGithubPlugin.create(
+        //   'https://github.com/asura-pro/coco/blob/master/docs/'
+        // ),
         function (hook) {
+          // '<span><a href="https://github.com/asura-pro">asura</a> &copy;Guazi Dng ShZhng.</span>',
           var footer = [
             '<hr/>',
             '<footer>',
-            '<span><a href="https://github.com/asura-pro">asura</a> &copy;Guazi Dng ShZhng.</span>',
+            '<span>❤️ &copy;<a target="_blank" href="javascript:void(0);">Guazi</a> Dng ShZhng.</span>',
             '</footer>'
           ].join('')
           hook.afterEach(function (html) {

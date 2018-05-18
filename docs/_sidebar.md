@@ -3,13 +3,14 @@
 - 使用简册
   - [创建用例](create-case.md)
   - [使用代理](create-proxy.md)
-  - [创建场景](create-senario.md)
+  - [创建场景](create-scenario.md)
   - [创建任务](create-job.md)
 - 参考
   - [接口](restapi.md)
   - [断言](assert.md)
   - [上下文](context.md)
   - [场景](scenario.md)
+  - [脚本](script.md)
   - [代理](proxy.md)
 - [接口](api/README.md)
   - [分组相关](api/api-group.md)

@@ -27,6 +27,10 @@ aliyun: http://maven.aliyun.com/nexus/content/groups/public/
 > 如果用 IDE 看不到详细进度
 > 如果用 sbt, 进入目录执行 `sbt`, 看不到下载进度, 如果想看可查看日志 `tail -f $HOME/.sbt/boot/update.log`
 
-## 代码规范
+## 编码参考规范
 
-暂无, 参考现有代码风格
+Scala: [https://docs.scala-lang.org/style/](https://docs.scala-lang.org/style/)
+
+Typescript: [https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines](https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines)
+
+Angular: [https://angular.io/guide/styleguide](https://angular.io/guide/styleguide)

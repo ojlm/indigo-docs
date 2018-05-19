@@ -6,7 +6,6 @@
   - [创建场景](create-scenario.md)
   - [创建任务](create-job.md)
 - 参考
-  - [接口](restapi.md)
   - [断言](assert.md)
   - [上下文](context.md)
   - [场景](scenario.md)

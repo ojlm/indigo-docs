@@ -76,8 +76,8 @@
 ### 序号2的用例声明示例
 ```json
 {
-    "cookie" : [{"key" : "token", "value" : "{$._prev.entity.data.userInfo.token}"}]
+    "cookie" : [{"key" : "token", "value" : "{{$._prev.entity.data.userInfo.token}}"}]
 }
 ```
-其中 `$._prev.entity.data.userInfo.token` 即可取上下文中的内容 `123`. 用 `{` 和 `}` 包裹起来
+其中 `$._prev.entity.data.userInfo.token` 即可取上下文中的内容 `123`. 用 `{{` 和 `}}` 包裹起来
 

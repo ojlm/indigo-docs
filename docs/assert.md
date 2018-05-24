@@ -69,6 +69,16 @@ object FieldTypes {
 - `$size` : 判断数组(string)元素个数
 
 ### 其他
+- `$script` : `JavaScript` 脚本表达式结果必须为 `boolean` 类型返回为 `true` 或 `false`. 表达式中 `$` 变量代表当前值. 此种断言性能较差
+> 如:
+>```
+>{
+>  "$script" : "$.status===302;"
+>}
+>{
+>  "$script" : "$>=200"
+>}
+>```
 
 TODO :heart:
 

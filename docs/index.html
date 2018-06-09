@@ -21,7 +21,7 @@
         '/zh-cn/': '/zh-cn/',
         '/': '/'
       },
-      // repo: 'https://github.com/asura-pro/coco',
+      repo: 'https://github.com/asura-pro',
       maxLevel: 3,
       coverpage: true,
       coverpage: 'cover.md',
@@ -47,15 +47,14 @@
       },
       ga: 'UA-113487425-1',
       plugins: [
-        // EditOnGithubPlugin.create(
-        //   'https://github.com/asura-pro/coco/blob/master/docs/'
-        // ),
+        EditOnGithubPlugin.create(
+          'https://github.com/asura-pro/coco/blob/master/docs/'
+        ),
         function (hook) {
-          // '<span><a href="https://github.com/asura-pro">asura</a> &copy;瓜子 Dng ShZhng.</span>',
           var footer = [
             '<hr/>',
             '<footer>',
-            '<span>❤️ &copy;<a target="_blank" href="javascript:void(0);">瓜子</a> Dng ShZhng.</span>',
+            '<span>❤️ &copy;<a target="_blank" href="https://github.com/asura-pro">https://github.com/asura-pro.</a> </span>',
             '</footer>'
           ].join('')
           hook.afterEach(function (html) {

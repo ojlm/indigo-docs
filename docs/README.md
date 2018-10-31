@@ -1,6 +1,1 @@
-# Indigo
-
-> An awesome project.
-
-## Overview
-![](./assets/images/indigo-asura.jpg)
+[README](https://raw.githubusercontent.com/asura-pro/indigo/master/README.md ':include')

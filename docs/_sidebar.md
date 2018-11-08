@@ -3,11 +3,11 @@
   * [安装预览](zh-cn/install.md)
 
 * 快速开始
-  * [创建一个简单的请求](zh-cn/quickstart/write-a-simple-rest-case.md)
+  * [如何创建一个请求](zh-cn/quickstart/write-a-simple-rest-case.md)
 
 * 最佳实践
-  * [组织用例请求](zh-cn/bp/manage-case.md)
-  * [请求到不同环境](zh-cn/bp/manage-env.md)
+  * [如何管理我的大量用例](zh-cn/bp/manage-case.md)
+  * [如何应用不同环境](zh-cn/bp/manage-env.md)
 
 * 参考
   * [断言参考](zh-cn/assertion.md)

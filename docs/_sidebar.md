@@ -1,5 +1,5 @@
 * 🐣基本信息
-  * [基本概念--必看](zh-cn/concepts.md)
+  * [基本概念 ｄ(･∀･*)♪ﾟ🦉](zh-cn/concepts.md)
 
 * 🐠快速开始
   * [创建一个请求](zh-cn/quickstart/write-a-simple-rest-case.md)
@@ -11,12 +11,15 @@
   * [创建一个任务](zh-cn/quickstart/create-a-job.md)
 
 * 🐳最佳实践
-  * [如何管理我的大量用例](zh-cn/bp/manage-case.md)
+  * [如何使用各种变量和函数](zh-cn/bp/use-var-func.md)
+  * [如何管理我的大量用例~标签](zh-cn/bp/manage-case.md)
   * [如何应用不同环境](zh-cn/bp/manage-env.md)
 
-* 🐲快速参考
+* 🐬快速参考
+  * [用户界面说明](zh-cn/ui.md)
   * [断言参考](zh-cn/assertion.md)
-  * [请求上下文](zh-cn/context.md)
+  * [内置函数](zh-cn/function.md)
+  * [执行上下文](zh-cn/context.md)
   * [自定义认证和通知](zh-cn/plugins.md)
   * [开发指南](zh-cn/development-guide.md)
   * [安装预览](zh-cn/install.md)

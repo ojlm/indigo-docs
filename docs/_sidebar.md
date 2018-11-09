@@ -6,7 +6,6 @@
   * [对响应进行断言](zh-cn/quickstart/add-assertions.md)
   * [自动添加签名等认证信息](zh-cn/quickstart/add-auth.md)
   * [控制请求发送到什么环境](zh-cn/quickstart/add-env-proxy.md)
-  * [应用配置通用的变量](zh-cn/quickstart/add-custom-variable.md)
   * [创建一个场景](zh-cn/quickstart/create-a-scenario.md)
   * [创建一个任务](zh-cn/quickstart/create-a-job.md)
 

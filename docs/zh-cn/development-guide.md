@@ -18,6 +18,9 @@
 [repositories]
 local
 aliyun: http://maven.aliyun.com/nexus/content/groups/public/
+maven-central
+typesafe-releases: https://repo.typesafe.com/typesafe/releases
+typesafe-ivy-releasez: https://repo.typesafe.com/typesafe/ivy-releases,[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
 ```
 
 - IDE 推荐使用 IntellJ IDEA, 并安装上 Scala 插件

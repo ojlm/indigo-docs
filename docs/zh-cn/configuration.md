@@ -1,1 +1,105 @@
-### 部署配置
+# 部署配置
+
+## Indigo 配置
+
+```
+include "framework.conf"
+include "mailer.conf"
+play.http.secret.key = "wuae_/xG6QUxPLWvXneCm8TH:b]Ki`?Hm0mOom`uahFh3xgTg8[9R_dfjCdpkVPG"
+play.http.secret.key = ${?APPLICATION_SECRET}
+asura {
+
+  admin = ["indigo"]
+  reportBaseUrl = "http://localhost:4200/report/job"
+
+  db {
+    url = "jdbc:mysql://localhost:3306/asura?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull"
+    user = "root"
+    password = "123456"
+  }
+
+  job {
+    enabled = true
+    stdLogFileName = "std.log"
+    workDir = "/home/asura/data/job"
+
+    quartz {
+      org.quartz.scheduler.instanceId = AUTO
+      org.quartz.scheduler.skipUpdateCheck = true
+
+      org.quartz.threadPool.class = org.quartz.simpl.SimpleThreadPool
+
+      org.quartz.jobStore.misfireThreshold = 60000
+      org.quartz.jobStore.class = org.quartz.impl.jdbcjobstore.JobStoreTX
+      org.quartz.jobStore.driverDelegateClass = org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+      org.quartz.jobStore.useProperties = true
+      org.quartz.jobStore.tablePrefix = QRTZ_
+      org.quartz.jobStore.isClustered = true
+      org.quartz.jobStore.clusterCheckinInterval = 20000
+      org.quartz.jobStore.dataSource = CommonDS
+
+      org.quartz.dataSource.CommonDS.driver = com.mysql.jdbc.Driver
+      org.quartz.dataSource.CommonDS.provider = hikaricp
+      org.quartz.dataSource.CommonDS.URL = ${asura.db.url}
+      org.quartz.dataSource.CommonDS.user = ${asura.db.user}
+      org.quartz.dataSource.CommonDS.password = ${asura.db.password}
+      org.quartz.dataSource.CommonDS.maxConnections = 10
+      org.quartz.dataSource.CommonDS.validationQuery = select 0 from dual
+    }
+    default {
+      org.quartz.scheduler.instanceName = "default"
+      org.quartz.threadPool.threadCount = 10
+      org.quartz.threadPool.threadPriority = 5
+    }
+    system {
+      org.quartz.scheduler.instanceName = "system"
+      org.quartz.threadPool.threadCount = 1
+      org.quartz.threadPool.threadPriority = 5
+    }
+  }
+
+  es {
+    indexPrefix = "asura-"
+    // local node just for test, no ik-analyzer support
+    useLocalNode = true
+    localEsDataDir = "./logs/es"
+    url = "http://localhost:9200,localhost:9200?cluster.name=asura"
+  }
+
+  linkerd {
+    enabled = false
+    namerd = "http://localhost:4180"
+    proxyHost = "localhost"
+    httpProxyPort = 4140
+    httpsProxyPort = 4143
+    headerIdentifier = "asura-header"
+    httpNs = "http"
+  }
+
+  jwt {
+    secret = "4e66be05c19667736c1217b5005e290d6352fee6"
+  }
+
+  ldap {
+    enabled = true
+    url = "ldap://localhost"
+    searchbase = "dc=example,dc=org"
+    bindDn = "cn=admin,dc=example,dc=org"
+    password = "admin"
+    userFilter = "(uid={user})"
+    userIdAttr = "uid"
+    userRealNameAttr = "cn"
+    userEmailAttr = "mail"
+    connectionTimeout = 500
+    responseTimeout = 1000
+  }
+}
+```
+
+## Linkerd 配置示例
+
+> WIP
+
+## Namerd 配置示例
+
+> WIP

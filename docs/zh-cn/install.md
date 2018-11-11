@@ -2,7 +2,10 @@
 
 ## Docker 预览
 
-> 创建 `docker-compose.yml` 文件包含以下内容，执行 `docker-compose up`
+内部禁用了 Ldap，定时任务，Linkerd 的功能
+
+> 1. 首次执行。创建 `docker-compose.yml` 文件包含以下内容，执行 `docker-compose up`。
+> 注意：如果是第一次执行，等启动完成后再执行一次 `docker-compose restart indigo-api` （重启下 `indigo-api` 服务，确保在 `elasticsearch` 中成功建好 index，之后不需要重启）。
 
 ```yaml
 version: "3"
@@ -20,32 +23,14 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-  ldap-service:
-    image: osixia/openldap:1.2.1
-    ports:
-      - "389:389"
-      - "636:636"
-  ldap-admin:
-    image: osixia/phpldapadmin:0.7.1
-    ports:
-      - "1080:80"
-    links:
-      - ldap-service
-    environment:
-      PHPLDAPADMIN_HTTPS: "false"
-      PHPLDAPADMIN_LDAP_HOSTS: "ldap-service"
   indigo-api:
     image: asurapro/indigo-api:latest
     ports:
       - "9000:9000"
     links:
       - elasticsearch
-      - mysql
-      - ldap-service
     depends_on:
       - elasticsearch
-      - mysql
-      - ldap-service
     restart: on-failure
     environment:
       APPLICATION_SECRET: "0><>0zv0oG>JH6>YHq4Hs=5x;ht8VB>x`_lOWo<cb309F3n`k;gy1j;i[cd;zE>u"
@@ -56,6 +41,9 @@ services:
     links:
       - indigo-api
 ```
+> 2. 访问 [localhost:80](http://localhost:80)
+
+> 3. 输入任意相同的用户名和密码
 
 ## 下载发布版
 > WIP

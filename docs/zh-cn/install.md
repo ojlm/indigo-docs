@@ -1,5 +1,9 @@
 # 安装预览
 
+## 在线Demo预览
+
+> 访问 [https://asura.pro/](https://asura.pro/)（低配主机，如果失败请用其他方式）。 `用户名` 输入任意字符串，`密码` 和 `用户名` 一致即可登录。内部禁用了 Ldap，定时任务，Linkerd 的功能。
+
 ## Docker 预览
 
 内部禁用了 Ldap，定时任务，Linkerd 的功能

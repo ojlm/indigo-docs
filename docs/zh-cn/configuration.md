@@ -1,8 +1,55 @@
 # 部署配置
 
-## Indigo 配置
+## Indigo 前端配置示例
 
+`nginx` 配置示例，假设后端部署在 `localhost:9000`
+
+```nginx
+server {
+  listen 80;
+  server_name asura.pro;
+  index index.html;
+  root /var/www/html;
+  client_max_body_size 1024m;
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+  location /api/ws {
+      proxy_pass http://localhost:9000/api/ws;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection "Upgrade";
+  }
+  location /api/ {
+    proxy_pass http://localhost:9000/api/;
+    proxy_http_version 1.1;
+    proxy_connect_timeout 600;
+    proxy_read_timeout    600;
+    proxy_send_timeout    600;
+    chunked_transfer_encoding off;
+    proxy_cache off;
+  }
+  location /openapi {
+    proxy_pass http://localhost:9000/openapi;
+    proxy_http_version 1.1;
+    proxy_connect_timeout 600;
+    proxy_read_timeout    600;
+    proxy_send_timeout    600;
+    chunked_transfer_encoding off;
+    proxy_cache off;
+  }
+  access_log  /var/log/nginx/indigo_access.log;
+  error_log   /var/log/nginx/indigo_error.log;
+}
 ```
+
+## Indigo 后端配置示例
+
+`playframework`启动[相关配置](https://www.playframework.com/documentation/2.6.x/ProductionConfiguration)
+
+### 配置文件
+
+```HOCON
 include "framework.conf"
 include "mailer.conf"
 play.http.secret.key = "wuae_/xG6QUxPLWvXneCm8TH:b]Ki`?Hm0mOom`uahFh3xgTg8[9R_dfjCdpkVPG"
@@ -98,8 +145,68 @@ asura {
 
 ## Linkerd 配置示例
 
-> WIP
+[官网参考](https://api.linkerd.io/1.5.1/linkerd/index.html)
+
+```yaml
+admin:
+  ip: 0.0.0.0
+  port: 9990
+routers:
+- protocol: http
+  identifier:
+    kind: io.l5d.header
+    header: asura-header
+  interpreter:
+    kind: io.l5d.namerd
+    namespace: http
+    dst: /$/inet/localhost/4100
+  httpAccessLog: logs/access-http.log
+  label: indigo-http
+  servers:
+  - ip: 0.0.0.0
+    port: 4140
+- protocol: http
+  identifier:
+    kind: io.l5d.header
+    header: asura-header
+  interpreter:
+    kind: io.l5d.namerd
+    namespace: http
+    dst: /$/inet/localhost/4100
+  httpAccessLog: logs/access-http.log
+  label: indigo-https
+  client:
+    tls:
+      disableValidation: true
+  servers:
+  - ip: 0.0.0.0
+    port: 4143
+```
 
 ## Namerd 配置示例
 
-> WIP
+[官网参考](https://api.linkerd.io/1.5.1/namerd/index.html)
+
+```yaml
+admin:
+  ip: 0.0.0.0
+  port: 9991
+storage:
+  kind: io.l5d.zk
+  pathPrefix: /dtabs
+  zkAddrs:
+  - host: localhost
+    port: 2181
+interfaces:
+- kind: io.l5d.thriftNameInterpreter
+  ip: 0.0.0.0
+  port: 4100
+- kind: io.l5d.httpController
+  ip: 0.0.0.0
+  port: 4180
+namers:
+- kind: io.l5d.serversets
+  zkAddrs:
+  - host: localhost
+    port: 2181
+```

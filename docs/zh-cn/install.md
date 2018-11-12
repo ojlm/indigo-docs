@@ -50,8 +50,37 @@ services:
 > 3. 输入任意相同的用户名和密码
 
 ## 下载发布版
-> WIP
+
+相关部署[配置参考](/zh-cn/configuration)
+
+### 前端
+
+> 在这里下载最新的 https://github.com/asura-pro/indigo/releases 发布版本。解压获得前端静态文件。
+
+### 后端
+
+> https://github.com/asura-pro/indigo-api/releases 下载最新的发布版本。解压获得后端程序。
 
 ## 编译源码
 
-> WIP
+### 前端
+
+> 前提安装: [nodejs](https://nodejs.org/en/)，[yarn](https://yarnpkg.com/zh-Hans/docs/install)
+
+> 1. `git clone https://github.com/asura-pro/indigo.git`
+> 2. `cd indigo`
+> 3. `yarn install`
+> 4. `yarn run build`
+
+> `./dist` 文件夹中的所有静态资源文件即为发布版本。
+
+
+### 后端
+
+> 前提安装: [sbt](https://www.scala-sbt.org/download.html)
+
+> 1. `git clone https://github.com/asura-pro/indigo-api.git`
+> 2. `cd indigo-api`
+> 3. `sbt dist`
+
+> `./target/universal` 中的 `asura-app-${version}.zip` 压缩文件即为发布包。

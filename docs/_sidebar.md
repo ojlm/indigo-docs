@@ -16,6 +16,7 @@
 
 * 🐬快速参考
   * [用户界面说明](zh-cn/ui.md)
+  * [报表界面](zh-cn/dashboard.md)
   * [断言参考](zh-cn/assertion.md)
   * [内置函数](zh-cn/function.md)
   * [执行上下文](zh-cn/context.md)

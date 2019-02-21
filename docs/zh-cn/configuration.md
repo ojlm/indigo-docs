@@ -62,6 +62,8 @@ server {
 > source：https://github.com/asura-pro/indigo-api/blob/master/asura-app/conf/application.conf
 
 ```HOCON
+# https://www.playframework.com/documentation/latest/Configuration
+
 include "framework.conf"
 include "mailer.conf"
 play.http.secret.key = "wuae_/xG6QUxPLWvXneCm8TH:b]Ki`?Hm0mOom`uahFh3xgTg8[9R_dfjCdpkVPG"
@@ -124,9 +126,21 @@ asura {
     localEsDataDir = "./logs/es"
     url = "http://localhost:9200,localhost:9200?cluster.name=asura"
     // request log online
-    onlineLogUrl = "http://localhost:9200,localhost:9200?cluster.name=asura"
-    onlineLogPrefix = "nginx-access-"
-    onlineLogDatePattern = "yyyy-MM-dd"
+    onlineLog = [
+      {
+        tag = "online"
+        url = "http://localhost:9200,localhost:9200?cluster.name=asura"
+        prefix = "nginx-access-"
+        datePattern = "yyyy-MM-dd"
+        fieldDomain = "domain"
+        fieldMethod = "method"
+        fieldUri = "uri"
+        fieldRequestTime = "request_time"
+        fieldRequestTimeResolution = 1
+        fieldRemoteAddr = "remote_addr"
+        excludeRemoteAddrs = ["127.0.0.1", "127.0.0.1"]
+      }
+    ]
   }
 
   linkerd {
@@ -156,8 +170,30 @@ asura {
     connectionTimeout = 500
     responseTimeout = 1000
   }
+
+  cluster {
+    enabled = true
+    hostname = "127.0.0.1"
+    hostname = ${?CLUSTER_HOSTNAME}
+    port = 2551
+    port = ${?CLUSTER_PORT}
+    seed-nodes = [
+      "akka://ClusterSystem@127.0.0.1:2551",
+    ]
+    roles = [
+      "indigo"
+    ]
+  }
 }
 ```
+
+### 注意事项
+
+- aeron.rcv.initial.window.length 提示过小
+
+> 启用集群功能时可能会遇到，设置合适的大小如：  
+> $ sudo sysctl net.core.rmem_max=131072  
+> $ sudo sysctl net.core.rmem_default=131072
 
 ## Linkerd 配置示例
 

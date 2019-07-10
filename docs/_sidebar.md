@@ -14,13 +14,14 @@
   * [自定义认证和通知](zh-cn/plugins.md)
   * [趋势报表](zh-cn/dashboard.md)
 
-* 🐳问题Q&A
+* 🐳常见问题
+  * [hosts 和 Host 🦄](zh-cn/bp/hosts-vs-host.md)
   * [如何使用各种变量和函数](zh-cn/bp/use-var-func.md)
   * [如何管理我的大量用例~标签](zh-cn/bp/manage-case.md)
   * [如何应用不同环境](zh-cn/bp/manage-env.md)
 
 * 🐬开发指南
-  * [开发指南](zh-cn/development-guide.md)
+  * [开发指南 🦁](zh-cn/development-guide.md)
   * [安装预览](zh-cn/install.md)
   * [部署配置](zh-cn/configuration.md)
   * [项目依赖](zh-cn/deps.md)

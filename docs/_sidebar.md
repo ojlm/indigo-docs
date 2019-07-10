@@ -8,12 +8,11 @@
 
 * 🐣参考信息
   * [基本概念 ｄ(･∀･*)♪ﾟ🦉](zh-cn/concepts.md)
-  * [用户界面说明](zh-cn/ui.md)
-  * [报表界面](zh-cn/dashboard.md)
   * [断言参考](zh-cn/assertion.md)
   * [内置函数](zh-cn/function.md)
   * [执行上下文](zh-cn/context.md)
   * [自定义认证和通知](zh-cn/plugins.md)
+  * [趋势报表](zh-cn/dashboard.md)
 
 * 🐳问题Q&A
   * [如何使用各种变量和函数](zh-cn/bp/use-var-func.md)

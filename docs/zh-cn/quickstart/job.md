@@ -1,16 +1,13 @@
 # 创建一个任务
 
+![](./gif/job.gif)
+
 ## 1. 进入创建任务的界面
 > ![](./images/create-a-job-start.png)
 
-## 2. 添加用例请求
+## 2. 添加独立的请求
 
-### 通过过滤条件添加
-> 这种方式会在任务执行的时候执行符合条件的用例请求，可以点击 `预览` 查看当前符合条件的用例请求。
 > ![](./images/create-a-job-filter.png)
-
-### 一个个的选择
-> 两种方式可以同时存在
 
 ## 3. 添加场景
 > ![](./images/create-a-job-scenario.png)
@@ -32,8 +29,11 @@
 > ![](./images/create-a-job-subscriber-types.png)
 
 ## 7. 通过API调用
-> 任务都可以通过API调用，`http://host:port/api/v2/ci?id=` `id` 参数填写生成的任务ID。
+> 任务都可以通过API调用，`http://host:port/api/ci/job/${jobId}`, `jobId` 参数填写生成的任务ID。
 
 ## 8. 查看报告
+> 统计数据, 任务的历史趋势图
 > ![](./images/create-a-job-report.png)
+
+> 每次请求的详细数据
 > ![](./images/create-a-job-report-item.png)

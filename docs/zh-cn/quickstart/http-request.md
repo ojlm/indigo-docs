@@ -1,4 +1,5 @@
 ### 创建一个简单的请求
+![](./gif/start.gif)
 
 #### 1. 首先进入自己的项目，如：假设在 `indigo/docs` 项目下面。
 ![](./images/start.png)

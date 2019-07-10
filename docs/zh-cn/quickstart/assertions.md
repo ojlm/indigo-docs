@@ -1,6 +1,8 @@
 # 添加断言
 
-> [查看所有断言参考和内部实现机制](/zh-cn/assertion.md)
+![](./gif/assert.gif)
+
+[查看所有断言参考和内部实现机制](/zh-cn/assertion.md)
 
 > 可先点击一下发送，然后在标签页 `结果和断言`->`响应断言` 中的面板 `3` 处添加断言。
 > ![](./images/lets-add-assertions.png)

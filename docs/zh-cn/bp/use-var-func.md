@@ -7,10 +7,6 @@
 
 > 都是 [JsonPath](https://goessner.net/articles/JsonPath/) 表达式。以 `$.` 或 `$[` 开头。
 
-### 场景中引用之前执行的步骤数据
-
-> 如：`{{$._p.entity.code}}`
-
 ### 引用环境配置中的变量
 
 > 假设应用了这个环境配置

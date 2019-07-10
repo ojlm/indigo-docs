@@ -68,7 +68,7 @@
       "enabled": true,
       "updated_at": "2019-02-14 03:04:04.0",
       "id": 760,
-      "username": "duanxinceshirenyuan"
+      "username": "***"
     },
     {
       "sso": 218672,
@@ -76,7 +76,7 @@
       "enabled": true,
       "updated_at": "2019-02-14 03:04:04.0",
       "id": 761,
-      "username": "gonggongceshiyi"
+      "username": "***"
     }
   ]
 }

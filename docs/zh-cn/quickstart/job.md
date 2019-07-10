@@ -29,7 +29,7 @@
 > ![](./images/create-a-job-subscriber-types.png)
 
 ## 7. 通过API调用
-> 任务都可以通过API调用，`http://host:port/api/ci/job/${jobId}`, `jobId` 参数填写生成的任务ID。
+> 任务都可以通过API调用，`http://host:port/api/ci/job/{jobId}`, `jobId` 参数填写生成的任务ID。
 
 ## 8. 查看报告
 > 统计数据, 任务的历史趋势图

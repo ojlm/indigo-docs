@@ -15,3 +15,11 @@
 - 事件转发/触发器
 
 > 内部的定时执行机制和其他事件(Kafka), 可转换成 接口(http, dubbo, mysql) 请求
+
+## 和其他类似产品的对比
+
+- Postman
+- JMeter
+- HttpRunner
+- Lego
+- ...

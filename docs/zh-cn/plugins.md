@@ -4,9 +4,9 @@
 > 可以自己生成 jar 放到 lib 文件夹下，参考 https://www.playframework.com/documentation/2.6.x/SBTDependencies#Managing-library-dependencies 
 
 > 下面的例子是在源码的基础上建一个单独的子项目的方式
-> 参考项目：https://github.com/asura-pro/indigo-api/tree/master/asura-example/
+> 参考项目：https://github.com/asura-pro/asura/tree/master/asura-example/
 
-> Commit：https://github.com/asura-pro/indigo-api/commit/25adb4eb537a85c5ab89cf2923067b6fd7dccaef
+> Commit：https://github.com/asura-pro/asura/commit/25adb4eb537a85c5ab89cf2923067b6fd7dccaef
 
 ## 自定义认证及签名
 
@@ -31,7 +31,7 @@ trait AuthorizeAndValidate {
 
 ### 例子1
 
-> https://github.com/asura-pro/indigo-api/blob/master/asura-example/src/main/scala/com/example/asura/auth/ExampleAuth.scala
+> https://github.com/asura-pro/asura/blob/master/asura-example/src/main/scala/com/example/asura/auth/ExampleAuth.scala
 
 ```scala
 // config 是所有的配置，自定义的配置可以添加到应用的配置文件中
@@ -61,7 +61,7 @@ class ExampleAuth(config: Configuration) extends AuthorizeAndValidate {
 
 > 定义：https://en.wikipedia.org/wiki/Basic_access_authentication
 
-> https://github.com/asura-pro/indigo-api/blob/master/asura-app/app/asura/app/api/auth/BasicAuth.scala
+> https://github.com/asura-pro/asura/blob/master/asura-app/app/asura/app/api/auth/BasicAuth.scala
 
 <pre style="font-size:smaller;">
 object BasicAuth extends AuthorizeAndValidate {
@@ -126,7 +126,7 @@ trait JobNotifyFunction {
 
 ### 例子
 
->https://github.com/asura-pro/indigo-api/blob/master/asura-example/src/main/scala/com/example/asura/notify/ExampleNotification.scala
+>https://github.com/asura-pro/asura/blob/master/asura-example/src/main/scala/com/example/asura/notify/ExampleNotification.scala
 
 ## 自定义断言类型
 
@@ -156,4 +156,4 @@ object ExampleAssertion extends Assertion {
 }
 ```
 
-> 系统自带实现的一些 https://github.com/asura-pro/indigo-api/tree/master/asura-core/src/main/scala/asura/core/cs/assertion
+> 系统自带实现的一些 https://github.com/asura-pro/asura/tree/master/asura-core/src/main/scala/asura/core/assertion

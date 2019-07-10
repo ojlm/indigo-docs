@@ -59,7 +59,7 @@ services:
 
 ### 后端
 
-> https://github.com/asura-pro/indigo-api/releases 下载最新的发布版本。解压获得后端程序。
+> https://github.com/asura-pro/asura/releases 下载最新的发布版本。解压获得后端程序。
 
 ## 编译源码
 
@@ -79,7 +79,7 @@ services:
 
 > 前提安装: [sbt](https://www.scala-sbt.org/download.html)
 
-> 1. `git clone https://github.com/asura-pro/indigo-api.git`
+> 1. `git clone https://github.com/asura-pro/asura.git`
 > 2. `cd indigo-api`
 > 3. `sbt dist`
 

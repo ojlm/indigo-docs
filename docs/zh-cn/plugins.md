@@ -1,7 +1,7 @@
 # 自定义认证方式和任务通知
 
-> 目前的基本实现需要依赖 Playframeword 的 Modules 机制 https://www.playframework.com/documentation/2.6.x/Modules 。
-> 可以自己生成 jar 放到 lib 文件夹下，参考 https://www.playframework.com/documentation/2.6.x/SBTDependencies#Managing-library-dependencies 
+> 目前的基本实现需要依赖 Playframeword 的 Modules 机制 https://www.playframework.com/documentation/2.6.x/Modules .
+> 可以自己生成 jar 放到 lib 文件夹下,参考 https://www.playframework.com/documentation/2.6.x/SBTDependencies#Managing-library-dependencies 
 
 > 下面的例子是在源码的基础上建一个单独的子项目的方式
 > 参考项目：https://github.com/asura-pro/asura/tree/master/asura-example/
@@ -16,12 +16,12 @@ trait AuthorizeAndValidate {
 
   // 认证类型的ID, 整个系统需要唯一
   val `type`: String
-  // 描述，markdown 语法
+  // 描述,markdown 语法
   val description: String
-  // 数据模板，默认值，需要是 json 类型
+  // 数据模板,默认值,需要是 json 类型
   val template: String = "{}"
 
-  // 签名逻辑实现，第一个 `request` 是原始的请求, `auth` 是本身签名算法需要的 数据，函数返回一个加密/签名后的请求
+  // 签名逻辑实现,第一个 `request` 是原始的请求, `auth` 是本身签名算法需要的 数据,函数返回一个加密/签名后的请求
   def authorize(request: HttpRequest, auth: Authorization): Future[HttpRequest]
 
   // 本签名实现依赖的数据有效性的验证函数
@@ -34,7 +34,7 @@ trait AuthorizeAndValidate {
 > https://github.com/asura-pro/asura/blob/master/asura-example/src/main/scala/com/example/asura/auth/ExampleAuth.scala
 
 ```scala
-// config 是所有的配置，自定义的配置可以添加到应用的配置文件中
+// config 是所有的配置,自定义的配置可以添加到应用的配置文件中
 class ExampleAuth(config: Configuration) extends AuthorizeAndValidate {
   override val `type`: String = "ExampleAuth"
   override val description: String =
@@ -54,7 +54,7 @@ class ExampleAuth(config: Configuration) extends AuthorizeAndValidate {
   override def validate(auth: Authorization): (Boolean, String) = (true, null)
 }
 ```
-> 上面这个实现实际上什么都没做。在前端会增加这样
+> 上面这个实现实际上什么都没做.在前端会增加这样
 > ![](./images/plugin-auth-example.png)
 
 ### 例子2 Basic Access Authentication

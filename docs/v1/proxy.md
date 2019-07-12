@@ -7,7 +7,7 @@
 
 ### 路由表
 - 每一行记录组成: `/namespace/service-name => ip-or-domain/port`
-> `namespace` 可代表环境,用例的字段. `service-name` 是服务名称，接口的字段. `ip-or-domain` 为最终的目标地址的IP地址或域名, `port` 目标地址端口号
+> `namespace` 可代表环境,用例的字段. `service-name` 是服务名称,接口的字段. `ip-or-domain` 为最终的目标地址的IP地址或域名, `port` 目标地址端口号
 
 ```
 /prod/app-client => 10.0.0.1/80

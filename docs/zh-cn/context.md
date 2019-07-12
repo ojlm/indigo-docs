@@ -6,9 +6,9 @@
 
 ```json
 {
-    "status" : int          // 每个请求响应的状态码，数字. 指 Http 请求中的响应码, 如: 200, 404, 500
-    "headers" : {}          // 每个请求响应的消息头，Map. 指 Http 头(headers), map 结构
-    "entity" : string or {} // 每个响应的消息体，字符串或Map. Http, Dubbo, MySql 请求的的响应, 如果
+    "status" : int          // 每个请求响应的状态码,数字. 指 Http 请求中的响应码, 如: 200, 404, 500
+    "headers" : {}          // 每个请求响应的消息头,Map. 指 Http 头(headers), map 结构
+    "entity" : string or {} // 每个响应的消息体,字符串或Map. Http, Dubbo, MySql 请求的的响应, 如果
     "_env" : {}             // 当前生效的环境配置的自定义变量
     "_g" : {}               // 全局, 预留
     "_j" : {}               // 任务, 一般在任务作用域域级别的变量

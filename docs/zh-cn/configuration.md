@@ -2,7 +2,7 @@
 
 ## Indigo 前端配置示例
 
-`nginx` 配置示例，假设后端部署在 `localhost:9000`
+`nginx` 配置示例,假设后端部署在 `localhost:9000`
 
 ```nginx
 server {
@@ -47,11 +47,11 @@ server {
 
 ### SQL
 
-> 只有 Quartz 定时调度的依赖，https://github.com/asura-pro/asura/blob/master/asura-app/docs/sql/quartz-2.3.4.sql
+> 只有 Quartz 定时调度的依赖,https://github.com/asura-pro/asura/blob/master/asura-app/docs/sql/quartz-2.3.4.sql
 
 ### ES 系统启动后会自动检测索引和并创建
 
-> 目前无法单独配置，每个 `index` 的 `mapping` 定义：https://github.com/asura-pro/asura/tree/master/asura-core/src/main/scala/asura/core/es/model
+> 目前无法单独配置,每个 `index` 的 `mapping` 定义：https://github.com/asura-pro/asura/tree/master/asura-core/src/main/scala/asura/core/es/model
 
 > 初始化代码：https://github.com/asura-pro/asura/blob/master/asura-core/src/main/scala/asura/core/es/EsClient.scala
 
@@ -191,7 +191,7 @@ asura {
 
 - aeron.rcv.initial.window.length 提示过小
 
-> 启用集群功能时可能会遇到，设置合适的大小如：  
+> 启用集群功能时可能会遇到,设置合适的大小如：  
 > $ sudo sysctl net.core.rmem_max=131072  
 > $ sudo sysctl net.core.rmem_default=131072
 

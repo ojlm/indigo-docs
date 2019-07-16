@@ -2,7 +2,7 @@
 
 > 这个场景的作用是: 
 1. 请求 `https://api.github.com/repos/rust-lang/rust` 获得响应体里面的 `name` 字段值 
-2. 百度检索 `1` 中值.
+2. 百度检索 `第一步` 中值.
 
 ![](./gif/scenario.gif)
 
@@ -31,3 +31,9 @@
 
 > ![](./images/create-a-scenario-test.png)
 > ![](./images/create-a-scenario-result.png)
+
+## 4. 快速失败选项
+
+> `快速失败` 默认是选择状态, 即场景中前面一步失败后, 后面的步骤会跳过不执行. 若取消选中, 则不管上一步是否失败, 后面的步骤都会执行.
+> 
+> ![](./images/create-a-scenario-failfast.png)

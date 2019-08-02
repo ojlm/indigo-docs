@@ -16,6 +16,9 @@
     "_req" : {              // http 请求, 内部 body, 值请求体, json 或 字符串
       "body" : string or {}
     }
+    "time" : {
+      "request" int         // 发送请求到接收完响应的时间
+    }
 }
 ```
 

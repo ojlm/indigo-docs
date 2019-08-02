@@ -12,6 +12,7 @@
   * [内置函数](zh-cn/function.md)
   * [执行上下文](zh-cn/context.md)
   * [自定义认证和通知](zh-cn/plugins.md)
+  * [持续集成](zh-cn/ci.md)
   * [趋势报表](zh-cn/dashboard.md)
 
 * 🐳常见问题

@@ -16,6 +16,10 @@
   * [Dubbo](zh-cn/dubbo.md)
   * [趋势报表](zh-cn/dashboard.md)
 
+* 🐡压测
+  * [基本概念 (づ｡◕‿‿◕｡)づ 🥳](zh-cn/pea/README.md)
+  * [接口参考](zh-cn/pea/api.md)
+
 * 🐳常见问题
   * [hosts 和 Host 🦄](zh-cn/bp/hosts-vs-host.md)
   * [如何使用各种变量和函数](zh-cn/bp/use-var-func.md)

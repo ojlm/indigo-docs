@@ -17,8 +17,8 @@
   * [趋势报表](zh-cn/dashboard.md)
 
 * [🐡分布式压测](zh-cn/pea/README.md)
-  * [基本概念 (づ｡◕‿‿◕｡)づ 🥳](zh-cn/pea/README.md)
-  * [快速开始](zh-cn/pea/quickstart.md)
+  * [快速开始 (づ｡◕‿‿◕｡)づ 🥳](zh-cn/pea/README.md)
+  * [基本概念](zh-cn/pea/concepts.md)
   * [接口参考](zh-cn/pea/api.md)
   * [状态模型](zh-cn/pea/model.md)
 

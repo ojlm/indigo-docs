@@ -1,56 +1,24 @@
-# Pea
+# 快速开始
 
-以 [Gatling](https://github.com/gatling/gatling) (Async Scala-Akka-Netty based Load Test Tool) 作为底层执行引擎.
+## 1. 选择要执行的脚本或请求
+> 脚本适合比较复杂的场景, 除了 `HTTP` 协议, 还支持 `Dubbo` 和 `Grpc` 协议. 其他协议可以扩展.
 
-## `Worker` 角色
+## 2. 选择使用哪些工作节点
+> 每个节点会执行相同的任务
 
-> 单引擎实例, 执行具体的任务, 同一时间只能一个任务处于执行状态.
+## 3. 执行任务
 
-### 状态
+> ![](./images/shoot-01.png)
 
-> /${ROOT}/workers/${node}
+## 4. 进入任务实时监控界面
 
-- `idle`
+> ![](./images/shoot-jump.png)
+> ![](./images/shoot-job.png)
 
-> 空闲状态.
+## 5. 执行完后的完整报告
 
-- `running`
+> 场景中所有请求的概括
+> ![](./images/report-01.png)
 
-> 执行任务中.
-
-## `Reporter` 角色
-
-> 控制多个 `Worker` 节点, 执行任务或停止任务, 监控 `Worker` 状态, 收集数据, 生成聚合报告.
-
-### 任务状态
-
-> /${ROOT}/jobs/${runId}. `reporter` 可以同时控制多个任务的执行, 每个任务有以下这些状态.
-
-- `running`
-
-- `reporting`
-
-- `finished`
-
-#### 任务中的 Workers 状态
-
-> 发送任务时的响应, 对应的状态
-
-- `idle`
-
-> 初始状态
-
-- `running`
-
-> 发送负载成功
-
-- `ill`
-> 发送负载失败
-
-- `gathering`
-
-> worker 执行负载完成, 收集报告
-
-- `finished`
-
-> 收集报告完成
+> 单独每个请求的信息
+> ![](./images/report-02.png)

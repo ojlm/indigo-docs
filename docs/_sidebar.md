@@ -17,10 +17,15 @@
   * [趋势报表](zh-cn/dashboard.md)
 
 * [🐡分布式压测](zh-cn/pea/README.md)
-  * [快速开始 (づ｡◕‿‿◕｡)づ 🥳](zh-cn/pea/README.md)
+  * [快速开始 (づ｡◕‿‿◕｡)づ 🥳](zh-cn/pea/quickstart.md)
+  * [脚本管理](zh-cn/pea/simulations.md)
+  * [HTTP 示例](zh-cn/pea/http.md)
+  * [Dubbo 示例](zh-cn/pea/dubbo.md)
+  * [Grpc 示例](zh-cn/pea/grpc.md)
   * [基本概念](zh-cn/pea/concepts.md)
   * [接口参考](zh-cn/pea/api.md)
   * [状态模型](zh-cn/pea/model.md)
+  * [系统配置](zh-cn/pea/configuration.md)
 
 * 🐳常见问题
   * [hosts 和 Host 🦄](zh-cn/bp/hosts-vs-host.md)

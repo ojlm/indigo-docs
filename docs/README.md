@@ -1,4 +1,14 @@
-# 简介
+# Indigo
+
+<img src="./zh-cn/images/indigo.png" height="144">
+
+[![Build Status](https://travis-ci.org/asura-pro/indigo.svg?branch=master)](https://travis-ci.org/asura-pro/indigo)
+![GitHub release](https://img.shields.io/github/release/asura-pro/indigo.svg)
+![GitHub](https://img.shields.io/github/license/asura-pro/indigo.svg)
+
+---
+
+## 关于 Indigo
 
 `indigo` 目标是成为一个开源的企业级接口相关的应用工具. 支持的协议: `HTTP, HTTPS, MySql, Dubbo`. 实现了 `Postman` 和 `Gatling` 的部分商业功能.
 

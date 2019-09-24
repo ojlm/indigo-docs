@@ -24,8 +24,6 @@
   * [Grpc 示例](zh-cn/pea/grpc.md)
   * [基本概念](zh-cn/pea/concepts.md)
   * [接口参考](zh-cn/pea/api.md)
-  * [状态模型](zh-cn/pea/model.md)
-  * [系统配置](zh-cn/pea/configuration.md)
 
 * 🐳常见问题
   * [hosts 和 Host 🦄](zh-cn/bp/hosts-vs-host.md)

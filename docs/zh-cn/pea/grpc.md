@@ -40,3 +40,7 @@ class HelloGrpcSimulation extends PeaSimulation {
   ).protocols(grpcProtocol)
 }
 ```
+
+## 报告
+
+![](./images/grpc-report.png)

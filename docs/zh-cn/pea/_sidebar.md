@@ -5,7 +5,7 @@
   * [Dubbo 示例](zh-cn/pea/dubbo.md)
   * [Grpc 示例](zh-cn/pea/grpc.md)
   * [基本概念](zh-cn/pea/concepts.md)
-  * [接口参考](zh-cn/pea/api.md)
+  * [接口参考](zh-cn/pea/api/README.md)
   * [状态模型](zh-cn/pea/model.md)
   * [开发文档](zh-cn/pea/development.md)
   * [性能配置](zh-cn/pea/performance.md)

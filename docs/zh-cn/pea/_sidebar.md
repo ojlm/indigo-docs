@@ -4,6 +4,7 @@
   * [HTTP 示例](zh-cn/pea/http.md)
   * [Dubbo 示例](zh-cn/pea/dubbo.md)
   * [Grpc 示例](zh-cn/pea/grpc.md)
+  * [负载设置](zh-cn/pea/injections.md)
   * [基本概念](zh-cn/pea/concepts.md)
   * [接口参考](zh-cn/pea/api/README.md)
   * [状态模型](zh-cn/pea/model.md)

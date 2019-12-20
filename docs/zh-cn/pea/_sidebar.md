@@ -13,3 +13,4 @@
   * [性能配置](zh-cn/pea/performance.md)
   * [应用配置](zh-cn/pea/configuration.md)
   * [下载发布包](zh-cn/pea/download.md)
+  * [部署步骤](zh-cn/pea/deploy.md)

@@ -1,4 +1,4 @@
-# 负载设置
+# 发压模型
 
 > 原版 https://gatling.io/docs/current/general/simulation_setup/#injection
 

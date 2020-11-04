@@ -14,6 +14,7 @@
   * [自定义认证和通知](zh-cn/plugins.md)
   * [持续集成](zh-cn/ci.md)
   * [Dubbo](zh-cn/dubbo.md)
+  * [权限控制](zh-cn/permissions.md)
   * [趋势报表](zh-cn/dashboard.md)
 
 * [🐡分布式压测](zh-cn/pea/README.md)

@@ -17,6 +17,9 @@
   * [权限控制](zh-cn/permissions.md)
   * [趋势报表](zh-cn/dashboard.md)
 
+* [🐒 UI](zh-cn/ui/README.md)
+  * [Karate中文文档](zh-cn/ui/karate.md)
+  
 * [🐡分布式压测](zh-cn/pea/README.md)
   * [快速开始 (づ｡◕‿‿◕｡)づ 🥳](zh-cn/pea/quickstart.md)
   * [脚本管理](zh-cn/pea/simulations.md)

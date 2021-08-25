@@ -14,16 +14,16 @@ pea {
   port = ${?PORT}
   simulations {
     compileAtStartup = true
-    webEditorBaseUrl = "https://github.com/asura-pro/pea-simulations/blob/master/src/main/scala/"
+    webEditorBaseUrl = "https://github.com/ojlm/pea-simulations/blob/master/src/main/scala/"
     webEditorBaseUrl = ${?WEB_EDITOR_BASE}
   }
   results {
     folder = "./logs"
     folder = ${?RESULTS_FOLDER}
     report {
-      logo.href = "https://github.com/asura-pro/pea"
-      desc.href = "https://github.com/asura-pro/pea"
-      desc.content = "https://github.com/asura-pro/pea"
+      logo.href = "https://github.com/ojlm/pea"
+      desc.href = "https://github.com/ojlm/pea"
+      desc.content = "https://github.com/ojlm/pea"
     }
   }
   zk {

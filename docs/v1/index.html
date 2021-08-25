@@ -36,7 +36,7 @@
         '/zh-cn/': '/zh-cn/',
         '/': '/'
       },
-      repo: 'https://github.com/asura-pro',
+      repo: 'https://github.com/ojlm',
       maxLevel: 3,
       coverpage: false,
       // coverpage: 'cover.md',
@@ -62,13 +62,13 @@
       ga: 'UA-113487425-1',
       plugins: [
         EditOnGithubPlugin.create(
-          'https://github.com/asura-pro/docs/blob/master/docs/'
+          'https://github.com/ojlm/docs/blob/master/docs/'
         ),
         function (hook) {
           var footer = [
             '<hr/>',
             '<footer>',
-            '<span>👹<a target="_blank" href="https://github.com/asura-pro">Github</a> </span>',
+            '<span>👹<a target="_blank" href="https://github.com/ojlm">Github</a> </span>',
             '</footer>'
           ].join('')
           hook.afterEach(function (html) {

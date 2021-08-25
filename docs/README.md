@@ -20,7 +20,7 @@
 
 #### 可维护高数量级的用例, 具备较高的并发执行性能
 
-> `Indigo`的[后端](https://github.com/asura-pro/asura) 使用[Akka](https://akka.io/)框架作为底层基础实现. `Akka`是`JVM`上一个[Actor编程模型](https://doc.akka.io/docs/akka/current/guide/actors-motivation.html)的实现, 很适合用来构建高并发, 分布式和弹性消息驱动的应用. `Indigo`中使用了大量的`Actor`来对场景和任务进行抽象, 保证大量场景和任务同时执行过程中的状态隔离. `Indigo`中的数据, 包括基本的用例数据, 执行记录, 报告数据都存储在`Elastic Search`中.
+> `Indigo`的[后端](https://github.com/ojlm/asura) 使用[Akka](https://akka.io/)框架作为底层基础实现. `Akka`是`JVM`上一个[Actor编程模型](https://doc.akka.io/docs/akka/current/guide/actors-motivation.html)的实现, 很适合用来构建高并发, 分布式和弹性消息驱动的应用. `Indigo`中使用了大量的`Actor`来对场景和任务进行抽象, 保证大量场景和任务同时执行过程中的状态隔离. `Indigo`中的数据, 包括基本的用例数据, 执行记录, 报告数据都存储在`Elastic Search`中.
 
 #### 基于JSON的强大断言
 

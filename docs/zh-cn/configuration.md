@@ -47,19 +47,19 @@ server {
 
 ### SQL
 
-> 只有 Quartz 定时调度的依赖,https://github.com/asura-pro/asura/blob/master/asura-app/docs/sql/quartz-2.3.4.sql
+> 只有 Quartz 定时调度的依赖,https://github.com/ojlm/asura/blob/master/asura-app/docs/sql/quartz-2.3.4.sql
 
 ### ES 系统启动后会自动检测索引和并创建
 
-> 目前无法单独配置,每个 `index` 的 `mapping` 定义：https://github.com/asura-pro/asura/tree/master/asura-core/src/main/scala/asura/core/es/model
+> 目前无法单独配置,每个 `index` 的 `mapping` 定义：https://github.com/ojlm/asura/tree/master/asura-core/src/main/scala/asura/core/es/model
 
-> 初始化代码：https://github.com/asura-pro/asura/blob/master/asura-core/src/main/scala/asura/core/es/EsClient.scala
+> 初始化代码：https://github.com/ojlm/asura/blob/master/asura-core/src/main/scala/asura/core/es/EsClient.scala
 
 ### 配置文件
 
 > `playframework`启动[相关配置](https://www.playframework.com/documentation/2.6.x/ProductionConfiguration)
 
-> source：https://github.com/asura-pro/asura/blob/master/asura-app/conf/application.conf
+> source：https://github.com/ojlm/asura/blob/master/asura-app/conf/application.conf
 
 ```HOCON
 # https://www.playframework.com/documentation/latest/Configuration

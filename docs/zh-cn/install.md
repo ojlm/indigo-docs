@@ -17,7 +17,7 @@
 
 > 前提安装: [nodejs](https://nodejs.org/en/), [yarn](https://yarnpkg.com/zh-Hans/docs/install)
 
-> 1. `git clone https://github.com/asura-pro/indigo.git`
+> 1. `git clone https://github.com/ojlm/indigo.git`
 > 2. `cd indigo`
 > 3. `yarn install`
 > 4. `yarn run build`
@@ -28,7 +28,7 @@
 
 > 前提安装: [sbt](https://www.scala-sbt.org/download.html)
 
-> 1. `git clone https://github.com/asura-pro/asura.git`
+> 1. `git clone https://github.com/ojlm/asura.git`
 > 2. `cd indigo-api`
 > 3. `sbt dist`
 
